@@ -4,23 +4,23 @@
 # Target users to install
 # Define target users where to installs and configures software
 # Default: all Linux users
-user_list: []
+user_list: ['imoussa']
 
 # Install awscli.
 # Default is true.
-awscli_install: true
+awscli_install: false
 
 # Install voice and text chat Discord.
 # Default is true.
-discord_install: true
+discord_install: false
 
 # Install Docker.
 # Default is true.
-docker_install: true
+docker_install: false
 
 # Install Minikube for deploy local kubernetes cluster
 # Default is true
-minikube_install: true
+minikube_install: false
 
 # Install shell Oh-My-Zsh.
 # Default is true.
@@ -28,8 +28,13 @@ ohmyzsh_install: true
 
 # Install Spotify.
 # Default is true.
-spotify_install: true
+spotify_install: false
 
 # Install Virtualbox.
 # Default is true.
 virtualbox_install: true
+
+
+# Install tgenv.
+# Default is true.
+tgenv_install: true

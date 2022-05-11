@@ -1,0 +1,19 @@
+---
+# Install tg env
+
+- name: Git checkout tgenv
+  git:
+    repo: 'https://github.com/cunymatthieu/tgenv'
+    dest: /usr/local/tgenv
+    version: v0.0.3
+  register: result
+
+- name: Install tgenv binary
+  file:
+    src: /usr/local/tgenv/bin/{{ item }}
+    dest: /usr/local/bin/{{ item }}
+    state: link
+  loop:
+    - tgenv
+  when: result is success and not ansible_check_mode
+  register: result
