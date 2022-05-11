@@ -4,7 +4,7 @@
 # Target users to install
 # Define target users where to installs and configures software
 # Default: all Linux users
-user_list: ['imoussa']
+user_list: []
 
 # Install awscli.
 # Default is true.
@@ -35,6 +35,6 @@ spotify_install: false
 virtualbox_install: true
 
 
-# Install tgenv.
+# Install tfenv.
 # Default is true.
-tgenv_install: true
+tfenv_install: true

@@ -56,7 +56,7 @@
   when: spotify_install
   tags: spotify
 
-- name: Install tgenv
-  import_tasks: setup-tgenv.yml
-  when: tgenv_install
-  tags: tgenv
+- name: Install tfenv
+  import_tasks: setup-tfenv.yml
+  when: tfenv_install
+  tags: tfenv

@@ -1,0 +1,25 @@
+---
+# Install tg env
+
+- name: Git checkout tfenv
+  git:
+    repo: 'https://github.com/tfutils/tfenv.git'
+    dest: /home/imoussa/.local/tfenv
+    version: v2.2.3
+  register: result
+
+- name: Install tfenv binary
+  file:
+    src: /home/imoussa/.local/tfenv/bin/{{ item }}
+    dest: /home/imoussa/.local/bin/{{ item }}
+    state: link
+  loop:
+    - tfenv
+  when: result is success and not ansible_check_mode
+  register: result
+
+- name: Make owner of directory
+  ansible.builtin.file:
+    path: /home/imoussa/.local/tfenv
+    owner: imoussa
+    group: imoussa
