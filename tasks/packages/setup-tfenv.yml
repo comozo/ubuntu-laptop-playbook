@@ -1,11 +1,12 @@
 ---
-# Install tg env
+# Install tf env
 
 - name: Git checkout tfenv
   git:
     repo: 'https://github.com/tfutils/tfenv.git'
     dest: /home/imoussa/.local/tfenv
     version: v2.2.3
+    update: no
   register: result
 
 - name: Install tfenv binary

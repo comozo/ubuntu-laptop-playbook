@@ -5,13 +5,10 @@
     - defaults/main.yml
 
   roles:
-    # - diodonfrost.java
     - diodonfrost.packer
     - diodonfrost.vagrant
-    # - diodonfrost.terraform
-    # - diodonfrost.terragrunt
     - diodonfrost.ohmyzsh
-    # - diodonfrost.jetbrains_toolbox
+    - hurricanehrndz.rustup
 
   tasks:
     - include_tasks: tasks/main.yml
