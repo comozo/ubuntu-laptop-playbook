@@ -38,3 +38,6 @@ virtualbox_install: true
 # Install tfenv.
 # Default is true.
 tfenv_install: true
+
+# Rustup
+rustup_user: imoussa
