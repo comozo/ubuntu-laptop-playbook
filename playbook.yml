@@ -9,6 +9,7 @@
     - diodonfrost.vagrant
     - diodonfrost.ohmyzsh
     - hurricanehrndz.rustup
+    - geerlingguy.docker
 
   tasks:
     - include_tasks: tasks/main.yml

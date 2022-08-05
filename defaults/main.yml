@@ -41,3 +41,6 @@ tfenv_install: true
 
 # Rustup
 rustup_user: imoussa
+
+#
+ansible_distribution: "ubuntu"
