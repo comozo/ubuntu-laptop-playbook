@@ -44,3 +44,4 @@ rustup_user: imoussa
 
 #
 ansible_distribution: "ubuntu"
+gh_version: "2.14.3"

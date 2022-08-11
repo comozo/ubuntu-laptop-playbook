@@ -6,10 +6,11 @@
 
   roles:
     - diodonfrost.packer
-    - diodonfrost.vagrant
+    # - diodonfrost.vagrant
     - diodonfrost.ohmyzsh
     - hurricanehrndz.rustup
     - geerlingguy.docker
+    - fesaille.gh
 
   tasks:
     - include_tasks: tasks/main.yml
