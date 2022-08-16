@@ -43,5 +43,7 @@ tfenv_install: true
 rustup_user: imoussa
 
 #
+# Override the fact because a lot of roles do not cater for POP_OS as a distribution yet.
 ansible_distribution: "ubuntu"
+
 gh_version: "2.14.3"

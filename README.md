@@ -9,7 +9,7 @@ This playbook installs and configures most of the software I use on my Ubuntu la
 1.  [Install Ansible](http://docs.ansible.com/intro_installation.html).
 2.  Clone this repository to your local drive.
 3.  Run 'ansible-galaxy install -r requirements.yml' inside this directory to install required Ansible roles.
-4.  Run 'ansible-playbook playbook.yml' inside this directory.
+4.  Run 'ansible-playbook playbook.yml -K' inside this directory.
 
 ### Running a specific set of tagged tasks
 
